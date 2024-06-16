@@ -1,0 +1,14 @@
+Version	 size(%)	performance (/10)
+v0	 5		2
+v0.1	 10		4 (thanks comes in between everything and hello poorly detected)
+v0.2     20		0 (idle not detected)
+v1.0	 20		4
+v1.1	 30		4-5/10 (detects most of it but still detects unwanted, hello acting weird)
+v2.0	 30		5-6/10 (detects properly, hello and thanks are coming in between, goodbye is perfect)
+v2.1 	 20		 2/10 (detects only hello goodbye properly, repeat is detected for everything else hello also comes in between, goodbye is perfect)
+v2.2 	 30 		7-8/10 (repeat and please are a little poor, rest good)
+v1.11	 30		6-7 
+v2.3	 30		5-6 (added dropout layer)(please detection is bad , rest fine)
+v2.4	 30		7/10 (hello come after please and thanks after repeat, rest well)(has Dropout layer and removed few LSTM layers )
+v2.4.1	 30		5/10 (please not detected, rest well)	(no Dropout layer and removed few LSTM layers)
+v2.5 	 30		2/10 (hello goodbye perfect, but repeat and thanks are half for both, please not getting detected confused with hello)
